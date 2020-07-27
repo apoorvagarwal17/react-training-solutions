@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>IFSC Finder</title>
+</head>
+
+<body>
+    <div class='Upper'>
+        <h2>IFSC Code Finder</h2>
+        <div class='label'>
+            <label for="Bank"><strong>Select your bank</strong></label>
+        </div>
+        <div class='dropdown'>
+            <select name="Bank" id="Bank" class='dropdown1'>
+                <option value="Select Bank" selected disabled>Select Bank</option>
+            </select>
+        </div>
+        <div class='label'>
+            <label for="State"><strong>State in which bank is situated</strong></label>
+        </div>
+        <div class='dropdown'>
+            <select name="State" id="State" class='dropdown1'>
+                <option value="Select State" selected disabled>Select State</option>
+            </select>
+        </div>
+        <div class='label'>
+            <label for="District"><strong>District in which bank is situated</strong></label>
+        </div>
+        <div class='dropdown'>
+            <select name="District" id="District" class='dropdown1'>
+                <option value="Select District" selected disabled>Select District</option>
+            </select>
+        </div>
+        <div class='label'>
+            <label for="Branch"><strong>Branch of Bank within district</strong></label>
+        </div>
+        <div class='dropdown'>
+            <select name="Branch" id="Branch" class='dropdown1'>
+                <option value="Select Branch" selected disabled>Select Branch</option>
+            </select>
+        </div>
+    <button id='find' class='button'>Find IFSC</button>    
+    </div>
+    <div id="Result">
+    </div>
+    <script src="data.js"></script>
+</body>
+
+</html>
