@@ -14,19 +14,6 @@ const updateServer = (statusEmails, tab) => fetch('http://localhost:3005/api/upd
         })
     }).then(res => res.json())
 
-const deleteSelect = (selectStatus, tab) => fetch('http://localhost:3005/api/deleteSelect',
-    {
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        method: "POST",
-        body: JSON.stringify({
-            selectStatus,
-            tab
-        })
-    }).then(res => res.json())
-
 
 const EmailList = (props) => {
     const [emails, setEmails] = useState(props.emails);
